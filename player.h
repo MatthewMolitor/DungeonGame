@@ -13,6 +13,7 @@ public:
 	void draw(sf::RenderWindow &window);
 	sf::Vector2f getPosition() { return _body.getPosition(); };
 	Collider GetCollider() { return Collider(_body); }
+	void setPosition(float x, float y) {_body.setPosition(x,y);}
 
 protected:
 	sf::RectangleShape _body;

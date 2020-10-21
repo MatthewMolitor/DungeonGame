@@ -11,6 +11,7 @@ public:
 
 	sf::IntRect uvRect; 
 
+
 private:
 	//number images in the sprite sheet
 	sf::Vector2u _imageCount;
