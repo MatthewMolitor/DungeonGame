@@ -11,9 +11,8 @@ class Menu
 public:
 	Menu();
 	~Menu();
-	int Display();
+	int Display(sf::RenderWindow &window, sf::View &view);
 
 private:
-	int foo;
 };
 

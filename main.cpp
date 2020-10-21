@@ -68,7 +68,7 @@ int main()
 	
 	while (window.isOpen())
 	{
-		mode = mainMenu.Display();
+		mode = mainMenu.Display(window, view);
 		//main game loop
 		while (mode==1)
 		{

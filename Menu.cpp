@@ -3,7 +3,7 @@
 
 Menu::Menu()
 {
-	foo = 10;
+
 }
 
 
@@ -12,12 +12,12 @@ Menu::~Menu()
 }
 
 
-int Menu::Display()
+int Menu::Display(sf::RenderWindow &window, sf::View &view)
 {
 	//open main window
-	sf::Style::Fullscreen;
-	sf::RenderWindow window(sf::VideoMode(1512.0f, 1024.0f), "Main Menu", sf::Style::Close | sf::Style::Resize);
-	sf::View view(sf::Vector2f(0.0f, 0.0f), sf::Vector2f(1512.0f, 1024.0f));
+	//sf::Style::Fullscreen;
+	//sf::RenderWindow window(sf::VideoMode(1512.0f, 1024.0f), "Main Menu", sf::Style::Close | sf::Style::Resize);
+	//sf::View view(sf::Vector2f(0.0f, 0.0f), sf::Vector2f(1512.0f, 1024.0f));
 
 	view.setCenter((view.getSize().x / 2.0f), (view.getSize().y / 2.0f));
 
