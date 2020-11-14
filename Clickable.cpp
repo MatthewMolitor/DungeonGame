@@ -27,6 +27,7 @@ bool Clickable::isClicked(sf::RenderWindow &window)
 	if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
 	{
 		sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+		mousePos = sf::Vector2i(window.mapPixelToCoords(mousePos));
 		sf::FloatRect bounds = _button.getLocalBounds();
 		sf::Vector2f pos = _button.getPosition();
 		sf::FloatRect foo(pos.x, pos.y, bounds.width, bounds.height);
@@ -41,6 +42,7 @@ bool Clickable::isClicked(sf::RenderWindow &window)
 bool Clickable::isHovered(sf::RenderWindow &window)
 {
 	sf::Vector2i mousePos = sf::Mouse::getPosition(window);
+	mousePos = sf::Vector2i(window.mapPixelToCoords(mousePos));
 	sf::FloatRect bounds = _button.getLocalBounds();
 	sf::Vector2f pos = _button.getPosition();
 	sf::FloatRect foo(pos.x, pos.y, bounds.width, bounds.height);
